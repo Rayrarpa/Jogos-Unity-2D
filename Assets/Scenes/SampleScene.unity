@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 5123887}
   m_Layer: 0
   m_Name: Chao
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,6 +243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 317556124}
   - component: {fileID: 317556125}
+  - component: {fileID: 317556126}
   m_Layer: 0
   m_Name: groundCheck
   m_TagString: Untagged
@@ -281,6 +282,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
+--- !u!114 &317556126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317556123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4589cd44d7ed5e4d916d7f78138ac93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnGround: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,6 +646,7 @@ MonoBehaviour:
   rb2d: {fileID: 0}
   vel: 5
   jumpForce: 10
+  groundCheck: {fileID: 0}
 --- !u!50 &751557748
 Rigidbody2D:
   serializedVersion: 4
