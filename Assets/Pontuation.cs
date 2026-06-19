@@ -10,13 +10,13 @@ public class Pontuation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scoreText.text = "0";
+        scoreText.text = "Moeda: 0";
     }
 
     // Update is called once per frame
     public void AddPoints()
     {
         points++;
-        scoreText.text = points.ToString();
+        scoreText.text = "Moeda: " + points.ToString();
     }
 }
