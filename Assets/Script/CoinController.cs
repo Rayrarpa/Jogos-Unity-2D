@@ -9,6 +9,8 @@ public class CoinController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Pontuation pontuation = other.GetComponent<Pontuation>();
+            pontuation.AddPoints();
             Destroy(this.gameObject);
         }
     }
